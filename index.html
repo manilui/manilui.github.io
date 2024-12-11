@@ -1,157 +1,178 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Talento Tech</title>
-    <!-- agrega icono a la pestaña -->
-    <link rel="icon" type="image/x-icon" href="../static/assets/favicon.ico"  />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-    <link href="../static/styles/styles.css" rel="stylesheet" />
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous" ></script>
+    <title>Maniluisa - Manillas y Maní</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
 </head>
-<body id="page-top">
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-        <div class="container">
-            <a href="#page-top" class="navbar-brand">Energía Renovable</a>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <!-- Botón Modo Oscuro -->
+    <button id="darkModeToggle" class="fixed top-4 right-4 z-50 bg-gray-200 dark:bg-gray-800 p-2 rounded-full">
+        🌙
+    </button>
 
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type = "button" data-bs-toggle="collapse" data-bs-target = "#navbarResponsive" aria-controls = "navbarResponsive" aria-expanded = "false" aria-label = "Toggle navigation" >
-            Menu 
-            <i class="fas fa-bars"></i>
-            
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto" >
-                    <li class="nav-item mx-0 mx-lg-1" ><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#dashboard" >Dashboard</a></li>
-                    <li class="nav-item mx-0 mx-lg-1" ><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#estimador" >Estimador de Energía Renovable</a></li>
-                    <li class="nav-item mx-0 mx-lg-1" ><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#cargar" >Cargar Información</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <header class="masthead bg-primary text-white text-center" >
-        <div class="container d-flex align-items-center flex-column">
-            <img class="masthead-avatar mb-5" src="../static/assets/img/logo.png" />
-            <h1 class="masthead-heading text-uppercase mb-0" >Energía Renovable</h1>
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-fan" ></i></div>
-                <div class="divider-custom-line"></div>
-            </div>    
-            <p class="masthead-subheading font-weight-bold mb-0" >El futuro brillante de nuestro planeta comienza con la Energía Renovable, una fuente inagotable de esperanza que ilumina el camino hacia un mundo más limpio y sostenible</p>
-        </div>
+    <!-- Header -->
+    <header class="bg-pink-500 dark:bg-pink-800 text-white py-6 text-center">
+        <h1 class="text-4xl font-bold">Maniluisa</h1>
+        <p class="text-xl">Manillas y Maní Artesanal</p>
     </header>
-    <section class="page-section dashboard" id="dashboard" >
-        <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" >Dashboard</h2>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-solar-panel" ></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="dashboard-item mx-auto">
-                        <p>Gráfica 1</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="dashboard-item mx-auto">
-                        <p>Gráfica 2</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="dashboard-item mx-auto">
-                        <p>Gráfica 3</p>
-                    </div>  
-                </div>
-                <div class="col-md-6 col-lg-4 mb-lg-0">
-                    <div class="dashboard-item mx-auto">
-                        <p>Gráfica 4</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-md-0">
-                    <div class="dashboad-item mx-auto">
-                        <p>Gráfica 5</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="dashboard-item mx-auto">
-                        <p>Gráfica 6</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="page-section bg-primary text-white mb-0" id="estimador" >
-        <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-white" >Estimador de Energía Renovable en el consumo Eléctrico</h2>
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-lightbulb" ></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <form action="" method="post">
-                <div class="row">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 col-xl-7">
-                            <div class="form-floating mb-3 ">
-                                <input class="form-control" type="text" name="consumo_total" id="consumototal" required />
-                                <label for="consumo_total">Consumo Total(kwh)</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt-4 ">
-                    <button class="btn btn-x1 btn-outline-light" ><i class="fas fa-plug me-2" ></i>Calcular</button>
-                </div>
-            </form>
-            <div class="text-center mt-4 ">
-                <img src="../static/assets/img/formula.png" width="50%">
-            </div>
-        </div>
-    </section>
-    <section class="page-section" id="cargar" >
-        <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" >Cargar Archivo de Información</h2>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-plug-circle-plus" ></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <div class="row justify-content-center ">
 
-            </div><div class="col-lg-8 col-xl-7 ">
-                <form method="post">
-                    <div class="form-floating mb-3">
-                        <input class="form-control" id="archivo_data" name="archivo_data" type="file" required>
-                        <label for="archivo_data">Cargar Archivo Energía Renovable World Wide: 1965 - 2022</label>
-                    </div>
-                    <button class="btn btn-primary btn-xl" type="submit" >Cargar</button>
+    <!-- Productos -->
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12">
+            <h2 class="text-3xl font-semibold mb-6 text-center dark:text-white">
+                Nuestros Productos
+            </h2>
+            <div id="productos" class="grid md:grid-cols-3 gap-6">
+                <!-- Los productos se generarán con JS -->
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section>
+            <h2 class="text-3xl font-semibold mb-6 text-center dark:text-white">
+                Contáctanos
+            </h2>
+            <div class="max-w-md mx-auto bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                <form id="contactoForm" class="space-y-4">
+                    <input 
+                        type="text" 
+                        name="nombre" 
+                        placeholder="Tu Nombre" 
+                        required
+                        class="w-full p-2 border rounded dark:bg-gray-700 dark:text-white dark:border-gray-600"
+                    >
+                    <input 
+                        type="tel" 
+                        name="telefono" 
+                        placeholder="Tu Teléfono" 
+                        required
+                        class="w-full p-2 border rounded dark:bg-gray-700 dark:text-white dark:border-gray-600"
+                    >
+                    <textarea 
+                        name="mensaje" 
+                        placeholder="Tu Mensaje" 
+                        required
+                        class="w-full p-2 border rounded h-32 dark:bg-gray-700 dark:text-white dark:border-gray-600"
+                    ></textarea>
+                    <button 
+                        type="submit" 
+                        class="w-full bg-pink-500 text-white p-3 rounded hover:bg-pink-600 transition"
+                    >
+                        Enviar Mensaje
+                    </button>
                 </form>
             </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-pink-400 dark:bg-pink-900 text-white py-4 text-center">
+        <p>© 2024 Maniluisa - Todos los derechos reservados</p>
+        <div class="mt-2 space-x-4">
+            <a href="#" class="hover:underline">Instagram</a>
+            <a href="#" class="hover:underline">WhatsApp</a>
         </div>
-    </section>
-    <footer class="footer text-center" >
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <p> CIAF 2024</p>
-                </div>
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4" >&copy;Luisa Insuasti</h4>
-                </div>
-                <div class="col-lg-4">
-                    Pereira
-                </div>
-            </div>
-        </div>
-        
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" ></script>
-    <script src="../static/js/scripts.js"></script>
 
+    <script>
+        // Modo Oscuro
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const htmlElement = document.documentElement;
 
+        // Cargar preferencia de tema
+        if (localStorage.getItem('theme') === 'dark') {
+            htmlElement.classList.add('dark');
+            darkModeToggle.textContent = '☀️';
+        }
+
+        darkModeToggle.addEventListener('click', () => {
+            htmlElement.classList.toggle('dark');
+            
+            if (htmlElement.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark');
+                darkModeToggle.textContent = '☀️';
+            } else {
+                localStorage.setItem('theme', 'light');
+                darkModeToggle.textContent = '🌙';
+            }
+        });
+
+        // Productos
+        const productos = [
+            {
+                nombre: "Manillas Tejidas",
+                descripcion: "Manillas artesanales hechas a mano",
+                precio: 5000,
+                imagen: "https://via.placeholder.com/300"
+            },
+            {
+                nombre: "Maní Artesanal",
+                descripcion: "Maní tostado con sal gourmet",
+                precio: 3000,
+                imagen: "https://via.placeholder.com/300"
+            },
+            {
+                nombre: "Combo Manilla + Maní",
+                descripcion: "Manilla y paquete de maní",
+                precio: 7000,
+                imagen: "https://via.placeholder.com/300"
+            }
+        ];
+
+        const productosContainer = document.getElementById('productos');
+
+        productos.forEach(producto => {
+            const productoDiv = document.createElement('div');
+            productoDiv.classList.add(
+                'bg-white', 'dark:bg-gray-800', 'rounded-lg', 
+                'shadow-md', 'overflow-hidden', 'transform', 
+                'transition', 'hover:scale-105'
+            );
+
+            productoDiv.innerHTML = `
+                <img 
+                    src="${producto.imagen}" 
+                    alt="${producto.nombre}" 
+                    class="w-full h-48 object-cover"
+                >
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2 dark:text-white">
+                        ${producto.nombre}
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        ${producto.descripcion}
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold text-pink-600">
+                            $${producto.precio.toLocaleString()}
+                        </span>
+                        <button 
+                            class="bg-pink-500 text-white p-2 rounded-full hover:bg-pink-600 transition"
+                        >
+                            🛒
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            productosContainer.appendChild(productoDiv);
+        });
+
+        // Formulario de Contacto
+        const contactoForm = document.getElementById('contactoForm');
+
+        contactoForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Mensaje enviado. ¡Gracias por contactarnos!');
+            contactoForm.reset();
+        });
+    </script>
 </body>
 </html>
