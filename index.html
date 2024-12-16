@@ -19,7 +19,7 @@
 
     <!-- Header -->
     <header class="bg-pink-500 dark:bg-pink-800 text-white py-6 text-center">
-        <img src="logom.png" alt="" height="5%" width="5%" >
+        <img src="logom.png" alt="" height="3%" width="3%" >
         <h1 class="text-4xl font-bold">Maniluisa</h1>
         <p class="text-xl">Manillas y Maní Artesanal</p>
     </header>
@@ -38,14 +38,21 @@
         <!-- Contacto -->
         <section>
             <h2 class="text-3xl font-semibold mb-6 text-center dark:text-white">
-                Contáctanos
+                Domicilio gratis a Pereira Contáctanos
             </h2>
             <div class="max-w-md mx-auto bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-                <form id="contactoForm" class="space-y-4">
+                <form id="contactoForm" class="space-y-4" action="https://formspree.io/f/mvgojaob">
                     <input 
                         type="text" 
                         name="nombre" 
                         placeholder="Tu Nombre" 
+                        required
+                        class="w-full p-2 border rounded dark:bg-gray-700 dark:text-white dark:border-gray-600"
+                    >
+                    <input 
+                        type="text" 
+                        name="nombre" 
+                        placeholder="Cuantos?" 
                         required
                         class="w-full p-2 border rounded dark:bg-gray-700 dark:text-white dark:border-gray-600"
                     >
@@ -57,7 +64,7 @@
                         class="w-full p-2 border rounded dark:bg-gray-700 dark:text-white dark:border-gray-600"
                     >
                     <textarea 
-                        name="mensaje" 
+                        name="Describe tu Pedido" 
                         placeholder="Tu Mensaje" 
                         required
                         class="w-full p-2 border rounded h-32 dark:bg-gray-700 dark:text-white dark:border-gray-600"
@@ -66,7 +73,7 @@
                         type="submit" 
                         class="w-full bg-pink-500 text-white p-3 rounded hover:bg-pink-600 transition"
                     >
-                        Enviar Mensaje
+                        !Quiero mi Pedido ya¡
                     </button>
                 </form>
             </div>
@@ -120,10 +127,16 @@
                 imagen: "mani.png"
             },
             {
+                nombre: "Maní Artesanal",
+                descripcion: "Maní Dulce, salado y pasas",
+                precio: 3000,
+                imagen: "maniDulce.jpeg"
+            },
+            {
                 nombre: "Combo Manilla + Maní",
                 descripcion: "Manilla y paquete de maní",
                 precio: 7000,
-                imagen: "https://via.placeholder.com/300"
+                imagen: "combo.jpeg"
             }
         ];
 
